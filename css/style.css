@@ -1,0 +1,13 @@
+button, table, input {
+    font-family: "Adobe Arabic";
+    font-size: 20px !important;
+}
+
+table { margin-top: 20px; }
+
+button {
+    padding: 1px 15px;
+    width: 100%;
+}
+
+tr, td, th { text-align: center; }
