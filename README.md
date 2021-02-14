@@ -1,0 +1,2 @@
+# Snippet
+Snippet is a programming term for a small region of re-usable source code, machine code, or text. Ordinarily, these are formally defined operative units to incorporate into larger programming modules. Snippet management is a feature of some text editors, program source code editors, IDEs, and related software. It allows the user to avoid repetitive typing in the course of routine edit operations.
