@@ -1,0 +1,12 @@
+textarea {
+  resize: both;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+body {
+  background-image: ,/images/bg.png;
+}
+

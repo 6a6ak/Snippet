@@ -15,9 +15,10 @@ $(document).ready(function(){
                 console.log(response)
                 if(response == 1) {
                     $("input").val("");
+                    $("textarea").val("");
                     read();
                 } else {
-                    alert("تما فیلد ها باید پر شوند.")
+                    alert("Fill all the field")
                 }
             }
         })
@@ -40,12 +41,12 @@ $(document).ready(function(){
                             '    <td class="editable fname">'+data[i].fname+'</td>\n' +
                             '    <td class="editable lname">'+data[i].lname+'</td>\n' +
                             '    <td class="editable skill">'+data[i].skill+'</td>\n' +
-                            '    <td><button id="'+data[i].id+'" class="btn btn-info update">ویرایش</button></td>\n ' +
-                            '    <td><button id="'+data[i].id+'" class="btn btn-danger delete">حذف</button></td>\n ' +
+                            '    <td><button id="'+data[i].id+'" class="btn btn-info update">Edit</button></td>\n ' +
+                            '    <td><button id="'+data[i].id+'" class="btn btn-danger delete">Delete</button></td>\n ' +
                             '</tr>'
                     }
                 } else {
-                    items += '<tr><td colspan="6">هنوز هیچ داده ای وارد نشده</td></tr>'
+                    items += '<tr><td colspan="6">Nothing Entered yet</td></tr>'
                 }
 
                 $("table tbody").html("").append(items)
@@ -71,6 +72,8 @@ $(document).ready(function(){
             var fname = $(this).parent().siblings(".fname").children("input").val();
             var lname = $(this).parent().siblings(".lname").children("input").val();
             var skill = $(this).parent().siblings(".skill").children("input").val();
+
+            var skill = $(this).parent().siblings(".skill").children("textarea").val();
 
 
             $.ajax({
